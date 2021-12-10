@@ -1,0 +1,25 @@
+{
+  "name": "component_based_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env-shell NODE_ENV=production NODE_PATH=$INIT_CWD PORT=9200 node server.js",
+    "dev": "cross-env-shell NODE_ENV=development NODE_PATH=$INIT_CWD PORT=9200 nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "express-form-data": "^2.0.17",
+    "jsonwebtoken": "^8.5.1",
+    "promise-mysql": "^5.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
